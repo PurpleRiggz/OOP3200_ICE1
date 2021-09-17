@@ -4,6 +4,12 @@
 
 #define CARTESIAN_POINT_H
 
+#include <string>
+#include <iomanip>
+#include <iostream>
+#include <sstream>
+#include <cmath>
+
 class CartesianPoint{
 
 public:
@@ -23,9 +29,9 @@ public:
 	*/
 
 	// get x
-	// get y 
-	// get the distance between this point and a second point
-	// convert the obj to a string	
+	int GetX();
+	// get y
+	int GetY();
 
 	/* Mutator(s): Used to change the state of the object
 	*	- should contain logic to ensure object remains in a valid state.
@@ -33,8 +39,17 @@ public:
 	*/
 
 	// set x
-	// set y, 
-	// set point (both x and y)	
+	void SetX(int x);
+	// set y,
+	void SetY(int y);
+	// set point (both x and y)
+	void SetPoint(int x, int y);
+
+	// get the distance between this point and a second point
+	double GetDistanceTo(CartesianPoint pointTo) const;
+
+	// convert the obj to a string
+	std::string ToString() const;
 
 private:
 	// private data members for the dimensions of the point
