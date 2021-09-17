@@ -1,8 +1,4 @@
-
-// ReSharper disable CppClangTidyClangDiagnosticDocumentation
 #include "CartesianPoint.h"
-
-
 
 // Constructor for Cartesian Point
 CartesianPoint::CartesianPoint(int x, int y)
@@ -65,7 +61,7 @@ std::string CartesianPoint::ToString() const
 	std::stringstream strOut;
 
 	// build the string
-	strOut << "(" << myX << myY << ", " << myY << ")";
+	strOut << "(" << myX << ", " << myY << ")";
 
 	// return the string
 	return strOut.str();

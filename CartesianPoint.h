@@ -30,6 +30,7 @@ public:
 
 	// get x
 	int GetX();
+
 	// get y
 	int GetY();
 
@@ -40,8 +41,10 @@ public:
 
 	// set x
 	void SetX(int x);
+
 	// set y,
 	void SetY(int y);
+
 	// set point (both x and y)
 	void SetPoint(int x, int y);
 
